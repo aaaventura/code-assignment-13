@@ -1,8 +1,10 @@
 todo 
 	- make docker file
 	- make readme
-	- finish up all components with working tests.
-		- i don't think there's a specific on what their functions are.
+	- polish up all the components
+		- make sure there's no warnings.
+		- write real tests.
+		
 that should be it. 
 I'm done for school now. 
 a lot of research had to be done on how to use TS. good work.
