@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { TableProps } from './Table.types';
-import TableHeader from '../TableHeader';
-import TableRow from '../TableRow';
-import TableFooter from '../TableFooter';
+import TableHeader from './TableHeader';
+import TableRow from './TableRow';
+import TableFooter from './TableFooter';
 
 const StyledTable = styled.table<{ disabled?: boolean }>`
   width: 100%;
