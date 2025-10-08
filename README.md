@@ -7,32 +7,34 @@ This project sets up a development environment for a React app using Docker.
 ## How to Run the App
 
 1. You can clone the Repository through git with: 
-        `bash git clone https://github.com/aaaventura/code-assignment-11`
+        `bash git clone https://github.com/aaaventura/code-assignment-12`
 
 2. Change to the directory with: 
-        `cd code-assignment-11`
+        `cd code-assignment-12`
 
 3. Build the docker application into a container image:
-        `docker build -t ventura_ahleeryan-joe_assignment11 .`
+        `docker build -t ventura_ahleeryan-joe_assignment12 .`
 
-4. Run the application on localhost:7765:
-        `docker run -p 7775:7775 ventura_ahleeryan-joe_assignment11`
+4. Run the application on localhost:8083:
+        `docker run -p 8083:8083 ventura_ahleeryan-joe_assignment12`
 
 5. To verify your build, open your browser and visit: 
-    `http://localhost:7775`
+    `http://localhost:8083`
 
     If you are successful in your build, you will see the React logo spinning with `<h1> Codin 1 </h1>` underneath it.
+    
+6. 
 
 
 ## troubleshooting
 
 - Double check the version of Node.js with: ```node -v```
-    The application uses the Node.js version 18.17.0. 
+    The application uses the Node.js version 20.19.2. 
     
-    To switch versions, use: `nvm use 18`
+    To switch versions, use: `nvm use 20`
 
 - If Docker says the port is in use, use `bash docker ps` to display all currently running containers. 
-Then use `docker stop <container_using_7775>`
+Then use `docker stop <container_using_8083>`
 
         Note: root Access may be required to terminate other containers.
 
