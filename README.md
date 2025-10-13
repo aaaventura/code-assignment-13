@@ -10,7 +10,7 @@ This project sets up a development environment for a React app using Docker.
         `bash git clone https://github.com/aaaventura/code-assignment-12-v2`
 
 2. Change to the directory with: 
-        `cd code-assignment-12`
+        `cd code-assignment-12-v2`
 
 3. Build the docker application into a container image:
         `docker build -t ventura_ahleeryan-joe_assignment12 .`
