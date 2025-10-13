@@ -7,10 +7,10 @@ This project sets up a development environment for a React app using Docker.
 ## How to Run the App
 
 1. You can clone the Repository through git with: 
-        `bash git clone https://github.com/aaaventura/code-assignment-12-v2`
+        `bash git clone https://github.com/aaaventura/code-assignment-12`
 
 2. Change to the directory with: 
-        `cd code-assignment-12-v2`
+        `cd code-assignment-12`
 
 3. Build the docker application into a container image:
         `docker build -t ventura_ahleeryan-joe_assignment12 .`
