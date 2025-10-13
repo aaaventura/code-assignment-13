@@ -22,9 +22,7 @@ This project sets up a development environment for a React app using Docker.
     `http://localhost:8083`
 
     If you are successful in your build, you will see the React logo spinning with `<h1> Codin 1 </h1>` underneath it.
-    
-6. 
-
+   
 
 ## troubleshooting
 
