@@ -35,5 +35,7 @@ This project sets up a development environment for a React app using Docker.
 Then use `docker stop <container_using_8083>`
 
         Note: root Access may be required to terminate other containers.
-
-
+  
+- A reoccuring error is Docker not installing the correct npm version. To fix this error, manual install will be required.
+        Use `npm install` and then try step 4 again.
+  
