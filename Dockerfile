@@ -17,5 +17,8 @@ ENV PORT=8083
 # exposedthe port 
 EXPOSE 8083
 
+# build storybook
+RUN npm run build-storybook
+
 # start the react development server
 CMD ["npm", "start"]
