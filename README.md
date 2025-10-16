@@ -22,6 +22,11 @@ This project sets up a development environment for a React app using Docker.
     `http://localhost:8083`
 
     If you are successful in your build, you will the spinning React App logo and the header "Edit src/App.tsx and save to reload."
+
+6. To verify your storybook, open your browser and visit: 
+    `http://localhost:6006`
+
+    This should present the storybook UI with all the components according to the assignment's requirements.
    
 
 ## troubleshooting
@@ -38,4 +43,7 @@ Then use `docker stop <container_using_8083>`
   
 - A reoccuring error is Docker not installing the correct npm version. To fix this error, manual install will be required.
         Use `npm install` and then try step 4 again.
+
+- A reoccuring error is Docker not installing storybook. To fix this error, manual install will be required.
+        Use `npm create storybook@latest` and then try step 6 again.
   
