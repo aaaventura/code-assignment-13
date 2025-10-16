@@ -2,14 +2,16 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Button from './Button';
 
-test('Button is visible', () => {
-  render(<Button label="Click Me" />);
-  expect(screen.getByText('Click Me')).toBeVisible();
-});
+describe('Button Component', () => {
+  test('renders button and is visible', () => {
+    render(<Button label="Click Me" />);
+    const buttonElement = screen.getByText('Click Me');
+    expect(buttonElement).toBeVisible();
+  });
 
-test('Button changes color when disabled', () => {
-  render(<Button label="Disabled" disabled backgroundColor="#007bff" />);
-  const button = screen.getByText('Disabled');
-  expect(button).toHaveStyle('background-color: #ccc');
+  test('changes background color when disabled', () => {
+    render(<Button label="Click Me" disabled />);
+    const buttonElement = screen.getByText('Click Me');
+    expect(buttonElement).toHaveStyle('background-color: #cccccc');
+  });
 });
-
