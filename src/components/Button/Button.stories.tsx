@@ -1,30 +1,28 @@
-import React from 'react';
-import Button from './Button';
-import { ButtonProps } from './Button.types';
+// Button.stories.tsx
+import React from "react";
+import { Meta, Story } from "@storybook/react";
+import { Button } from "./Button";
+import { ButtonProps } from "./Button.types";
 
 export default {
-  title: 'Components/Button',
+  title: "Components/Button",
   component: Button,
   argTypes: {
-    label: { control: 'text' },
-    backgroundColor: { control: 'color' },
-    disabled: { control: 'boolean' },
+    color: { control: { type: "radio" }, options: ["blue", "gray", "transparent"] },
+    disabled: { control: "boolean" },
   },
-};
+} as Meta;
 
-const Template = (args: ButtonProps) => <Button {...args} />;
+const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-  label: 'Click Me',
-  backgroundColor: '#007bff',
-  disabled: false,
-};
+Default.args = { children: "Button", color: "blue", disabled: false };
+
+export const Gray = Template.bind({});
+Gray.args = { children: "Button", color: "gray" };
+
+export const Transparent = Template.bind({});
+Transparent.args = { children: "Button", color: "transparent" };
 
 export const Disabled = Template.bind({});
-Disabled.args = {
-  label: 'Disabled',
-  backgroundColor: '#ccc',
-  disabled: true,
-};
-
+Disabled.args = { children: "Button", disabled: true, color: "blue" };
