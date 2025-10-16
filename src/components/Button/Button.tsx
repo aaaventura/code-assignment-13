@@ -1,4 +1,3 @@
-title="Button.tsx" contentType="text/typescript">
 import React from 'react';
 import styled from 'styled-components';
 import { ButtonProps } from './Button.types';
