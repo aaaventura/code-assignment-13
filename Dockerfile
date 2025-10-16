@@ -18,4 +18,4 @@ ENV PORT=8083
 EXPOSE 8083
 
 # start the react development server
-CMD ["npm", "run", "storybook"]
+CMD ["npm", "start"]
