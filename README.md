@@ -21,7 +21,7 @@ This project sets up a development environment for a React app using Docker.
 5. To verify your build, open your browser and visit: 
     `http://localhost:8083`
 
-    If you are successful in your build, you will see the React logo spinning with `<h1> Codin 1 </h1>` underneath it.
+    If you are successful in your build, you will see Storybook open with the all the components according to the assignment.
    
 
 ## troubleshooting
