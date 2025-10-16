@@ -23,7 +23,7 @@ This project sets up a development environment for a React app using Docker.
 
     If you are successful in your build, you will the spinning React App logo and the header "Edit src/App.tsx and save to reload."
 
-6. To verify your storybook, open your browser and visit: 
+6. To verify your storybook, run it using `npm run storybook`, open your browser and visit: 
     `http://localhost:6006`
 
     This should present the storybook UI with all the components according to the assignment's requirements.
@@ -45,5 +45,5 @@ Then use `docker stop <container_using_8083>`
         Use `npm install` and then try step 4 again.
 
 - A reoccuring error is Docker not installing storybook. To fix this error, manual install will be required.
-        Use `npm create storybook@latest` and then try step 6 again.
+        Use `npm create storybook@latest`, follow the recommended installation, and then try step 6 again.
   
