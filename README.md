@@ -21,7 +21,7 @@ This project sets up a development environment for a React app using Docker.
 5. To verify your build, open your browser and visit: 
     `http://localhost:8083`
 
-    If you are successful in your build, you will the spinning React App logo and the header "Edit src/App.tsx and save to reload."
+    If you are successful in your build, you will see the spinning React App logo and the header "Edit src/App.tsx and save to reload."
 
 6. To verify your storybook, run it using `npm run storybook`, open your browser and visit: 
     `http://localhost:6006`
