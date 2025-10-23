@@ -27,7 +27,9 @@
     "build-storybook": "storybook build"
   },
   "husky": {
-    "hooks": {}
+    "hooks": {
+      "pre-commit": "echo \"[Husky] pre-commit\""
+    }
   },
   "eslintConfig": {
     "extends": [
