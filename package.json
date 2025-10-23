@@ -26,12 +26,12 @@
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "lint": "prettier --check .",
+    "prettier-check": "prettier --check .",
     "format": "prettier --write ."
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test:ci && npm run lint",
+      "pre-commit": "npm run test:ci && npm run prettier-check",
       "pre-push": "echo '[Husky] pre-push!'"
     }
   },
