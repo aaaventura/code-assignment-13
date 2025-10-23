@@ -46,4 +46,6 @@ Then use `docker stop <container_using_8083>`
 
 - A reoccuring error is Docker not installing storybook. To fix this error, manual install will be required.
         Use `npm create storybook@latest`, follow the recommended installation, and then try step 6 again.
+
+- `npm install husky@4.3.0`
   
