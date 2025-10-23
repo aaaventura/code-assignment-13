@@ -26,11 +26,6 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "echo '[Husky] pre-commit'"
-    }
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
