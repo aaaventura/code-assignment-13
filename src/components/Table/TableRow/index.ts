@@ -1,2 +1,2 @@
-export { default } from './TableRow';
-export * from './TableRow.types';
+export { default } from "./TableRow";
+export * from "./TableRow.types";

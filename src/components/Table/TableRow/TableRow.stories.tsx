@@ -1,13 +1,13 @@
-import { Meta, StoryObj } from '@storybook/react-webpack5';
-import TableRow from './TableRow';
+import { Meta, StoryObj } from "@storybook/react-webpack5";
+import TableRow from "./TableRow";
 
 const meta: Meta<typeof TableRow> = {
-  title: 'Components/TableRow',
+  title: "Components/TableRow",
   component: TableRow,
   argTypes: {
-    children: { control: 'text' },
-    disabled: { control: 'boolean' },
-    bgColor: { control: 'color' },
+    children: { control: "text" },
+    disabled: { control: "boolean" },
+    bgColor: { control: "color" },
   },
 };
 
@@ -19,7 +19,7 @@ export const Default: Story = {
   args: {
     children: <td>Cell</td>,
     disabled: false,
-    bgColor: '#ffffff',
+    bgColor: "#ffffff",
   },
 };
 
@@ -27,6 +27,6 @@ export const Disabled: Story = {
   args: {
     children: <td>Cell</td>,
     disabled: true,
-    bgColor: '#ffffff',
+    bgColor: "#ffffff",
   },
 };

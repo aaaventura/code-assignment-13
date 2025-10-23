@@ -1,9 +1,9 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import TableHeader from './TableHeader';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import TableHeader from "./TableHeader";
 
-describe('TableHeader Component', () => {
-  test('renders table header and is visible', () => {
+describe("TableHeader Component", () => {
+  test("renders table header and is visible", () => {
     render(
       <table>
         <TableHeader>
@@ -11,13 +11,13 @@ describe('TableHeader Component', () => {
             <th>Header</th>
           </tr>
         </TableHeader>
-      </table>
+      </table>,
     );
-    const headerElement = screen.getByRole('columnheader', { name: /Header/i });
+    const headerElement = screen.getByRole("columnheader", { name: /Header/i });
     expect(headerElement).toBeVisible();
   });
 
-  test('changes background color when disabled', () => {
+  test("changes background color when disabled", () => {
     const { container } = render(
       <table>
         <TableHeader disabled>
@@ -25,9 +25,9 @@ describe('TableHeader Component', () => {
             <th>Header</th>
           </tr>
         </TableHeader>
-      </table>
+      </table>,
     );
-    const theadElement = container.querySelector('thead');
-    expect(theadElement).toHaveStyle('background-color: #cccccc');
+    const theadElement = container.querySelector("thead");
+    expect(theadElement).toHaveStyle("background-color: #cccccc");
   });
 });

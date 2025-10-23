@@ -1,9 +1,9 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import TableFooter from './TableFooter';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import TableFooter from "./TableFooter";
 
-describe('TableFooter Component', () => {
-  test('renders table footer and is visible', () => {
+describe("TableFooter Component", () => {
+  test("renders table footer and is visible", () => {
     render(
       <table>
         <TableFooter>
@@ -11,13 +11,13 @@ describe('TableFooter Component', () => {
             <td>Footer</td>
           </tr>
         </TableFooter>
-      </table>
+      </table>,
     );
-    const footerElement = screen.getByText('Footer');
+    const footerElement = screen.getByText("Footer");
     expect(footerElement).toBeVisible();
   });
 
-  test('changes background color when disabled', () => {
+  test("changes background color when disabled", () => {
     const { container } = render(
       <table>
         <TableFooter disabled>
@@ -25,9 +25,9 @@ describe('TableFooter Component', () => {
             <td>Footer</td>
           </tr>
         </TableFooter>
-      </table>
+      </table>,
     );
-    const tfootElement = container.querySelector('tfoot');
-    expect(tfootElement).toHaveStyle('background-color: #cccccc');
+    const tfootElement = container.querySelector("tfoot");
+    expect(tfootElement).toHaveStyle("background-color: #cccccc");
   });
 });

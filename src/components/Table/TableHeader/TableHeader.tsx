@@ -1,12 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import { TableHeaderProps } from './TableHeader.types';
+import React from "react";
+import styled from "styled-components";
+import { TableHeaderProps } from "./TableHeader.types";
 
 const StyledTableHeader = styled.thead<TableHeaderProps>`
-  background-color: ${props => (props.disabled ? '#cccccc' : props.bgColor || '#f0f0f0')};
-  color: ${props => (props.disabled ? '#666666' : '#333333')};
-  opacity: ${props => (props.disabled ? 0.7 : 1)};
-  cursor: ${props => (props.disabled ? 'not-allowed' : 'default')};
+  background-color: ${(props) =>
+    props.disabled ? "#cccccc" : props.bgColor || "#f0f0f0"};
+  color: ${(props) => (props.disabled ? "#666666" : "#333333")};
+  opacity: ${(props) => (props.disabled ? 0.7 : 1)};
+  cursor: ${(props) => (props.disabled ? "not-allowed" : "default")};
   transition: background-color 0.3s ease;
 
   th {
@@ -21,7 +22,16 @@ const StyledTableHeader = styled.thead<TableHeaderProps>`
   }
 `;
 
-const TableHeader: React.FC<TableHeaderProps> = ({ children = <tr><th>Header</th></tr>, disabled = false, bgColor, ...props }) => {
+const TableHeader: React.FC<TableHeaderProps> = ({
+  children = (
+    <tr>
+      <th>Header</th>
+    </tr>
+  ),
+  disabled = false,
+  bgColor,
+  ...props
+}) => {
   return (
     <StyledTableHeader disabled={disabled} bgColor={bgColor} {...props}>
       {children}

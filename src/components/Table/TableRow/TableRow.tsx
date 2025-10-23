@@ -1,12 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import { TableRowProps } from './TableRow.types';
+import React from "react";
+import styled from "styled-components";
+import { TableRowProps } from "./TableRow.types";
 
 const StyledTableRow = styled.tr<TableRowProps>`
-  background-color: ${props => (props.disabled ? '#cccccc' : props.bgColor || '#ffffff')};
-  color: ${props => (props.disabled ? '#666666' : '#333333')};
-  opacity: ${props => (props.disabled ? 0.7 : 1)};
-  cursor: ${props => (props.disabled ? 'not-allowed' : 'default')};
+  background-color: ${(props) =>
+    props.disabled ? "#cccccc" : props.bgColor || "#ffffff"};
+  color: ${(props) => (props.disabled ? "#666666" : "#333333")};
+  opacity: ${(props) => (props.disabled ? 0.7 : 1)};
+  cursor: ${(props) => (props.disabled ? "not-allowed" : "default")};
   transition: background-color 0.3s ease;
 
   td {
@@ -20,7 +21,12 @@ const StyledTableRow = styled.tr<TableRowProps>`
   }
 `;
 
-const TableRow: React.FC<TableRowProps> = ({ children = <td>Cell</td>, disabled = false, bgColor, ...props }) => {
+const TableRow: React.FC<TableRowProps> = ({
+  children = <td>Cell</td>,
+  disabled = false,
+  bgColor,
+  ...props
+}) => {
   return (
     <StyledTableRow disabled={disabled} bgColor={bgColor} {...props}>
       {children}

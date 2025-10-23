@@ -1,2 +1,2 @@
-export { default } from './TableCell';
-export * from './TableCell.types';
+export { default } from "./TableCell";
+export * from "./TableCell.types";
