@@ -1,8 +1,0 @@
-todo 
-	- make docker file
-		-using node 20 because of storybook.
-	- polish readme
-		-need to add more details about storybook and styled components i think?		
-that should be it. 
-I'm done for school now. 
-a lot of research had to be done on how to use TS. good work.
