@@ -19,13 +19,16 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Adjust to match your local Node.js version (e.g., check with `node --version`)
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install
 
       - name: Install Storybook
         run: npm install storybook@latest
+        
+      - name: Install prettier
+        run: npm install prettier
 
       - name: Run tests
         run: npm run test:ci
