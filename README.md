@@ -8,19 +8,19 @@ This project sets up a development environment for a React app using Docker.
 ## How to Run the App
 
 1. You can clone the Repository through git with:
-   `bash git clone https://github.com/aaaventura/code-assignment-12`
+   `bash git clone https://github.com/aaaventura/code-assignment-13`
 
 2. Change to the directory with:
-   `cd code-assignment-12`
+   `cd code-assignment-13`
 
 3. Build the docker application into a container image:
-   `docker build -t ventura_ahleeryan-joe_assignment12 .`
+   `docker build -t ventura_ahleeryan-joe_assignment13 .`
 
 4. Run the application on localhost:8083:
-   `docker run -p 8083:8083 ventura_ahleeryan-joe_assignment12`
+   `docker run -p 8018:8018 ventura_ahleeryan-joe_assignment13`
 
 5. To verify your build, open your browser and visit:
-   `http://localhost:8083`
+   `http://localhost:8018`
 
    If you are successful in your build, you will see the spinning React App logo and the header "Edit src/App.tsx and save to reload."
 
